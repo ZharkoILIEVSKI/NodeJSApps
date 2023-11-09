@@ -7,9 +7,6 @@ const path = require('path');
 console.log('----START----');
 console.log(__dirname);
 
-fs.mkdirSync(path.join(__dirname,'logs'));
-fs.writeFileSync(path.join(__dirname,'logs','eventLogs.txt'),'PROBA TEST\n');
-
 class MyEvent extends EventEmitter{};
 const myEvent = new MyEvent();
 
