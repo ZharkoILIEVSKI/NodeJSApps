@@ -37,6 +37,11 @@ app.get('^/$| index(.html)?', (req,res) => {
     res.sendFile(path.join(__dirname,'views', 'index.html'));
 })
 
+// const but = document.getElementById('eden');
+// but.addEventListener('click',function() {
+//     but.innerHTML=`<p>EDEN</p>`;
+// })
+
 app.get('about|ab|a', (req,res) => {
     console.log(req.method, req.url);
     res.sendFile(path.join(__dirname,'views', 'about.html'));
